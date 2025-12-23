@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💍4-Month Nikah Anniversary💍</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #fff);
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #d63384;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #d63384;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #b82d6f;
+    }
+    .promise {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>💍4-Month Nikah Anniversary💍</h1>
+    <p><strong>Status:</strong> Waiting for OUR BIG DAY </p>
+    <p><strong>Husband:</strong> Still learning 😅</p>
+    <p><strong>Wife:</strong> Always right ❤️</p>
+
+    <button onclick="newPromise()">Click Here</button>
+    <div class="promise" id="promise"></div>
+
+    <hr style="margin: 25px 0;">
+    <p>
+   
+    </p>
+  </div>
+
+  <script>
+    const promises = [
+      " Happy 4-Month Nikah Anniversary ❤️ Queen of My Life 👑 Thank you for making my life brighter, funnier, and better every day. I LOVE YOU 😘😘😘",
+    ];
+
+    function newPromise() {
+      const random = Math.floor(Math.random() * promises.length);
+      document.getElementById("promise").innerText = promises[random];
+    }
+  </script>
+
+</body>
+</html>
